@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Franciszek Kurowski">
+        <link rel="stylesheet" href="Projekt2.css">
+        <title>Postacie</title>
+        <style>
+            body {
+                margin: 0px;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+                background: linear-gradient(90deg, yellow, brown);
+            }
+            main {
+                margin-left: 80px;
+                margin-right: 80px;
+                font-size: 2em;
+            }
+            .navbar, ul {
+                list-style-type: none;
+                background-color: hsl(56, 52%, 76%);
+                padding: 0px;
+                margin: 0px;
+                overflow: hidden;
+            }
+            .navbar a{
+                color: black;
+                text-decoration: none;
+                padding: 15px;
+                display: block;
+                text-align: center;
+                font-size: 1.6em;
+                border: 1px solid black;
+            }   
+            .navbar a:hover{
+                background-color: hsl(56, 66%, 46%);
+            }
+            .navbar li{
+                float: left;
+                width: 20%;
+            }
+            .a1 {
+                background-color: rgb(238, 202, 148);
+                border: solid 3px black;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+                font-size: 1em;
+                width: 8em;
+                border-radius: 1em;
+            }
+            .b1 {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 2em;
+            }
+        </style>
+    </head>
+    <body>
+
+         <h1 style="text-align: center; font-size: 4em;">Funkcja Kwadratowa</h1>
+
+         <nav class="navbar">
+            <ul></ul>
+               <li><a href="k.html">Strona główna</a></li>
+               <li><a href="Równania.html">Równania kwadratowe</a></li>
+               <li><a href="Nierówności.html">Nierówności kwadratowe</a></li>
+               <li><a href="Viete'a.html">Wzory Viete'a</a></li>
+               <li><a href="Parametr.html">Zadania z parametrem</a></li>
+            </ul>
+         </nav>
+         <main>
+            <h2 style="text-align: center; font-size: 2em;">Funkcja kwadratowa - postać ogólna</h2>
+         <div class="a1">
+            <p><span style="color:red;">a</span>, <span style="color: blue;">b</span>, <span style="color: green;">c</span> &isin; <b>R</b>, <span style="color: red;">a</span> &ne; 0</p>
+            <p>y = <span style="color: red;">a</span>x<sup>2</sup> + <span style="color: blue;">b</span>x + <span style="color: green;">c</span></p>
+         </div>
+         <hr>
+         <h2 style="text-align: center; font-size: 2em;">Delta</h2>
+         <div class="a1">
+            <p>&Delta; = <span style="color: blue">b</span><sup>2</sup> - 4<span style="color: red;">a</span><span style="color: green;">c</span></p>
+         </div>
+
+         <h2 style="text-align: center; font-size: 2em;">Funkcja kwadratowa - postać kanoniczna</h2>
+         <div class="b1">
+            <img src="wzórp.jpg" alt="Wzór na p" style="width: 8em; border-radius: 1em; border: solid 2px black; margin-right: 1em;">
+            <img src="wzórq.jpg" alt="Wzór na q" style="width: 8em; border-radius: 1em; border: solid 2px black; margin-left: 1em;">
+         </div>
+         <div class="a1">
+            <p><span style="color:red;">a</span>, <span style="color: blue;">p</span>, <span style="color: green;">q</span> &isin; <b>R</b>, <span style="color: red;">a</span> &ne; 0</p>
+            <p>y = <span style="color: red;">a</span>(x - <span style="color: blue;">p</span>)<sup>2</sup> + <span style="color: green;">q</span></p>
+         </div>
+         <hr>
+         <h2 style="text-align: center; font-size: 2em;">Pierwiastek funkcji kwadratowej</h2>
+         <p style="text-align: center; font-size: 1.5em;">Kiedy &Delta; > 0, funkcja kwadratowa ma 2 pierwiastki:</p>
+         <div class="b1">
+            <img src="wzórx1.jpg" alt="Wzór na x1" style="width: 10em; border-radius: 1em; border: solid 2px black; margin-right: 1em; display: flex; justify-self: center; ">
+            <img src="wzórx2.jpg" alt="Wzór na x2" style="width: 10em; border-radius: 1em; border: solid 2px black; margin-right: 1em; display: flex; ">
+         </div>
+         <p style="text-align: center; font-size: 1.5em;">Kiedy &Delta; = 0, funkcja kwadratowa ma 1 pierwiastek:</p>
+         <div class="b1">
+            <img src="wzórx0.jpg" alt="Wzór na x0" style="width: 8em; border-radius: 1em; border: solid 2px black; display: flex; justify-self: center;">
+         </div>
+         <p style="text-align: center; font-size: 1.5em;">Kiedy &Delta; &lt; 0, funkcja kwadratowa <span style="color: red;"><b>nie ma pierwiastków</b></span></p>
+         <hr>
+         <h2 style="text-align: center; font-size: 2em;">Funkcja kwadratowa - postać iloczynowa</h2>
+         <div class="a1">
+            <p>y = <span style="color: red;">a</span>(x-<span style="color: blue;">x<sub>1</sub></span>)(x-<span style="color: green;">x<sub>2</sub></span>)</p>
+         </div>
+         <br>
+         </main>
+    </body>
+</html>

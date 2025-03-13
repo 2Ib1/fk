@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Franciszek Kurowski">
+        <link rel="stylesheet" href="Projekt2.css">
+        <title>Funkcja Kwadratowa</title>
+        <style>
+            body {
+                margin: 0px;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+                background: linear-gradient(90deg, yellow, brown);
+            }
+            mai {
+                font-size: 2em;
+                width: 60%;
+                text-align: center;
+                margin: 0 auto;
+            }
+
+
+
+            .navbar, ul {
+                list-style-type: none;
+                background-color: hsl(56, 52%, 76%);
+                padding: 0px;
+                margin: 0px;
+                overflow: hidden;
+            }
+            .navbar a{
+                color: black;
+                text-decoration: none;
+                padding: 15px;
+                display: block;
+                text-align: center;
+                font-size: 1.6em;
+                border: 1px solid black;
+            }   
+            .navbar a:hover{
+                background-color: hsl(56, 66%, 46%);
+            }
+            .navbar li{
+                float: left;
+                width: 20%;
+            }
+            ol {
+                list-style-type: none;
+            }
+        </style>
+    </head>
+    <body>
+
+         <h1 style="text-align: center; font-size: 4em;">Funkcja Kwadratowa</h1>
+
+         <nav class="navbar">
+            <ul>
+                <li><a href="k.html">Zadania z parametrem</a></li>
+                <li><a href="Postacie.html">Postacie</a></li>
+                <li><a href="Równania.html">Równania kwadratowe</a></li>
+                <li><a href="Nierówności.html">Nierówności kwadratowe</a></li>
+                <li><a href="Viete'a.html">Wzory Viete'a</a></li>
+            </ul>
+         </nav>
+        <main>
+            <h2 style="text-align: center; font-size: 4em;">Funkcja kwadratowa z parametrem</h2>
+            <pre><p style="font-size: 3em;">
+                1. Badanie liczby rozwiązań w zależności od parametru:
+                (m<sup>2</sup> - 1)x<sup>2</sup> + (m + 1)x + 1 =0
+                To równanie jest rónaniem kwadratowym, zatem ilość rozwiązań zależy
+                od wyniku "Delty". 
+                Pierwszym krokiem w przypadku takiego równania jest rozważenie równania
+                liniowego, ponieważ przy "x<sup>2</sup>" znajduje się parametr.
+                I. a = 0 <=> m<sup>2</sup> - 1 = 0
+                                 m<sup>2</sup> = 1
+                                |m| = 1
+                          m = 1  v  m = -1 
+                0x<sup>2</sup> + 2x + 1 = 0   0x<sup>2</sup> + 0x + 1 = 1
+                 x = -1/2                 0 = 1
+                Jedno rozwiązaie        Brak rozwiązań
+                II. Teraz obliczamy "Deltę" i sprawdzamy jej wynik.
+                a ≠ 0 <=> m ∈ R\{-1;1}
+                Δ = (m+1)<sup>2</sup> - 4 * (m<sup>2</sup> - 1) * 1
+                Δ = m<sup>2</sup> + 2m + 1 - 4m<sup>2</sup> + 4
+                Δ = -3m<sup>2</sup> + 2m + 5
+                1) Δ > 0 - dwa różnie rozwiązania 
+                   -3m<sup>2</sup> +2m + 5 > 0
+                   Δ<sub>m</sub> = 4 - 4 * (-3) * 5 = 64, √Δ<sub>m</sub> = 8
+                   m<sub>1</sub> = 5/3     m<sub>2</sub> = -1
+                      m ∈ (-1; 5/3) \ {1}
+                2) Δ = 0 - jedno rozwiązaie
+                   Δ = 0 <=> m ∈ {-1; 5/3} ∧ m ∈ R \ {-1; 1}
+                               m ∈ {5/3}
+                3) Δ < 0 <=> m ∈ (-∞; -1) v (5/3; + ∞)
+                Odp: Dla m ∈ (-1; 1) v (1; 5/3) funkcja ma 2 rozwiązania.
+                     Dla m ∈ {5/3; 1} funkja ma jedno rozwiązanie.
+                     Dla m ∈ (-∞; -1> v (5/3; + ∞) funkcja nie ma rozwiązań
+                
+                2. Wyznacznie wartości parametru m, dla których równanie ma dwa
+                różne rozwiązanie dodatnie
+                (m -2)x<sup>2</sup> + (m + 1)x -m = 0
+                Pierszym krokiem jaki musimy wykonać jest ustalenie założeń. 
+                |-----
+                | a ≠	0 = > 1) m ≠ 2 (Rozważamy funkcję liniową) 
+                | Δ > 0 (W treści polecenie jest napisane że funjkcja musi mieć
+                | 2 rozwiązania, zatem Δ musi być większa od 0)
+                | x<sub>1</sub> x x<sub>2</sub> > 0
+                | x<sub>1</sub> + x<sub>2</sub> > 0 (Obydwa rozwiązania muszą być dodatnie zatem 
+                | zarówno suma, jak i iloczyn pierwiastków muszą być dodatnie)
+                |-----
+                2) Δ > 0
+                   Δ = (m + 1)<sup>2</sup> - 4 * (m - 2) * (-m) > 0
+                       m<sup>2</sup> + 2m + 1 + 4m<sup>2</sup> - 8m > 0
+                       5m<sup>2</sup> - 6m + 1 > 0
+                   Δ<sub>m</sub> = 36 - 20 = 16, √Δ<sub>m</sub> = 4
+                         m<sub>1</sub> = 1    m<sub>2</sub> = 1/5
+                       m ∈ (-∞; 1/5) v (1; +∞)
+                3) x<sub>1</sub> x x<sub>2</sub> > 0
+                   c/a > 0
+                   -m/m - 2 > 0
+                   -m(m - 2) > 0
+                   m ∈ (0; 2)
+                4) x<sub>1</sub> + x<sub>2</sub> > 0
+                   -b/a > 0
+                   -(m + 1)/(m - 2) > 0
+                   -(m + 1)(m - 2) > 0
+                     m ∈ (-1; 2)
+                |-----
+                | m ≠ 2
+                | m ∈ (-∞; 1/5) v (1; +∞) 
+                | m ∈ (0; 2)
+                | m ∈ (-1; 2)
+                |-----
+                W tym momencie należy zsumować wszystkie założenia i "wyciągnąć"
+                z nich część wspólną.
+                Odp: Zbiór wartości m ∈ (0; 1/5) v (1; 2).
+                
+                3. Niech x<sub>1</sub> i x<sub>2</sub> będa pierwiastkami równania. Wyznacz wartości
+                parametru "p", dla których zachodzi nierówność x<sub>1</sub>/x<sub>2</sub> + x<sub>2</sub>/x<sub>1</sub> ≥ 6.
+                x<sup>2</sup> + px + 1 = 0
+                Pierszym krokiem jaki musimy wykonać jest ustalenie założeń. 
+                |-----
+                | a ≠ 0
+                | Δ ≥ 0                 =>          1) p<sup>2</sup> - 4 * 1 * 1 ≥ 0 
+                | x<sub>1</sub>/x<sub>2</sub> + x<sub>2</sub>/x<sub>1</sub> ≥ 6                     p<sup>2</sup> ≥ 4 / √
+                |-----                                    |p| ≥ 2
+                                                       p ≥ 2 v p ≤ -2
+                2) x<sub>1</sub>/x<sub>2</sub> + x<sub>2</sub>/x<sub>1</sub> ≥ 6
+                   (x<sub>1</sub> + x<sub>2</sub>)/(x<sub>2</sub> * x<sub>1</sub>) ≥ 6
+                   ((x<sub>1</sub> + x<sub>2</sub>)<sup>2</sup> - 2x<sub>1</sub>x<sub>2</sub>)/(x<sub>2</sub> * x<sub>1</sub>) ≥ 6
+                   ((-p<sup>2</sup>) - 2)/1 ≥ 6
+                   p<sup>2</sup> ≥ 8 / √
+                   |p| ≥ 2√2
+                   p ≥ 2√2 v p ≤ -2√2
+                |-----
+                | p ∈ (-∞; -2> v (2; +∞) 
+                | p ∈ (-∞; -2√2> v (2√2; +∞)
+                |-----
+                W tym momencie należy zsumować wszystkie założenia i "wyciągnąć" 
+                z nich część wspólną.
+                Odp: Zbiór wartości p ∈ (-∞; -2√2> v (2√2; +∞).
+                
+                4. Wyznacznie parametru m, aby nierówność była prawdziwa dla każdego
+                x ∈ R.
+                (m + 1)x<sup>2</sup> - 3x + 1 > 0
+                Parametr stoi przy x<sup>2</sup>, zatem musimy rozważyć czy nie występuje
+                funkcja liniowa.
+                I. a = 0
+                m + 1 = 0
+                m = -1
+                0x<sup>2</sup> - 3x + 1 > 0
+                -3x + 1 > 0
+                Sprzeczność
+                m = -1 nie spełnia warunków zadania
+                W tym momencie musimy ustalić założenia.
+                II.
+                |-----
+                | a > 0 (Nierównośc musi być więskza od 0, zatem a musi być większe 
+                | aby ramiona parabeli byli skierowane do góry)
+                | Δ < 0 (Nierówność musi być prawdziwa dla każdego x ∈ R, więc "Delta"
+                | musi być mniejsza od 0 aby nie było miejsc zerówych a nierówność
+                | była zawsze prawdziwa)
+                |-----
+                1) a > 0
+                   m + 1 > 0
+                    m > -1
+                2) Δ < 0
+                   (-3)<sup>2</sup> - 4(m + 1) * 1 < 0
+                   9 - 4m - 4 < 0
+                   -4m < -5
+                   m > 5/4
+                |-----
+                | m > -1
+                | m > 5/4
+                |-----
+                W tym momencie należy zsumować wszystkie założenia i "wyciągnąć" 
+                z nich część wspólną.
+                Odp: Zbiór wartości m ∈ (5/4; +∞).
+                
+                5. Wyznacznie wartości parametru m, aby suma kwadratów pierwiastków 
+                równania ogiągnęła wartość najmniejszą. 
+                x<sup>2</sup> + (m + 1)x + 1 = 0
+                Parametr nie wsytępuję przy "x<sup>2</sup>" zatem nie trzeba rozważać funkcji 
+                liniowej.
+                |-----
+                | Δ ≥ 0 ("Delta" większa lub równa 0, aby występowały rozwiązania)
+                | x<sub>1</sub><sup>2</sup> + x<sub>2</sub><sup>2</sup> => Minimum
+                |-----
+                1) Δ ≥ 0
+                   (m + 1)<sup>2</sup> - 4 * 1 * 1 ≥ 0
+                   (m + 1)<sup>2</sup> ≥ 4 / √
+                   |x + 1| ≥ 2
+                   m + 1 ≥ 2   v     m + 1 ≤ -2
+                      m ≥ 1             m ≤ -3
+                   m ∈ (-∞; -3) v (1; +∞)
+                2) x<sub>1</sub><sup>2</sup> + x<sub>2</sub><sup>2</sup>
+                   (x<sub>1</sub> + x<sub>2</sub>)<sup>2</sup> - 2x<sub>1</sub>x<sub>2</sub>
+                   (-b/a)<sup>2</sup> - 2c/a 
+                   ( - (m + 1)/1)<sup>2</sup> - 2 x 1
+                   (m + 1)<sup>2</sup> - 2
+                   m<sup>2</sup> + 2m + 1 - 2
+                   m<sup>2</sup> + 2m - 1
+                   Otrzymaliśmy funkcję kwadratową f(m), której dziedzina 
+                   (-∞; -3) v (1; +∞), dzięki czemu jesteśmy w stanie obliczyć jej
+                   wartość najmniejszą. 
+                   f(m) = m<sup>2</sup> + 2m - 1
+                   p = -2/2 x 1 = -1 ∉ Df
+                   f(-3) = 9 - 6 - 1 = 2
+                   f(1) = 2
+                Odp: Suma kwadratów będzie najmniejsza gdy m = {-3; 1} i ta wartość 
+                wynosi 2.
+                </p></pre>
+        </main>
+    </body>
+</html>

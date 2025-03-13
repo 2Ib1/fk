@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Franciszek Kurowski">
+        <link rel="stylesheet" href="Projekt2.css">
+        <title>Funkcja Kwadratowa</title>
+        <style>
+            body {
+                margin: 0px;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+                background: linear-gradient(90deg, yellow, brown);
+            }
+            main {
+                font-size: 2em;
+                width: 60%;
+                text-align: center;
+                margin: 0 auto;
+            }
+            .navbar, ul {
+                list-style-type: none;
+                background-color: hsl(56, 52%, 76%);
+                padding: 0px;
+                margin: 0px;
+                overflow: hidden;
+            }
+            .navbar a{
+                color: black;
+                text-decoration: none;
+                padding: 15px;
+                display: block;
+                text-align: center;
+                font-size: 1.6em;
+                border: 1px solid black;
+            }   
+            .navbar a:hover{
+                background-color: hsl(56, 66%, 46%);
+            }
+            .navbar li{
+                float: left;
+                width: 20%;
+            }
+            ol {
+                list-style-type: none;
+            }
+            .b1 {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 2em;
+            }
+        </style>
+    </head>
+    <body>
+
+         <h1 style="text-align: center; font-size: 4em;">Funkcja Kwadratowa</h1>
+
+         <nav class="navbar">
+            <ul>
+                <li><a href="k.html">Strona główna</a></li>
+               <li><a href="Postacie.html">Postacie</a></li>
+               <li><a href="Równania.html">Równania kwadratowe</a></li>
+               <li><a href="Nierówności.html">Nierówności kwadratowe</a></li>
+
+               <li><a href="Parametr.html">Zadania z parametrem</a></li>
+            </ul>
+         </nav>
+        <main>
+            <h2 style="text-align: center; font-size: 2em;">Wzory Viete'a</h2>
+            <p style="text-align: center; font-size: 2em;">Wzorów Viete'a możemy użyć tylko wtedy gdy "Delta" > 0, ponieważ tylko wtedy istnieją pierwiastki funkcji kwadratowej.</p>
+            <div class="b1">
+                <img src="wzoryv.jpg" alt="Wzór na viete'a" style="width: 15em; border-radius: 1em; border: solid 2px black; margin-right: 0em;">
+            </div>
+            <p style="text-align: center; font-size: 2em;"><b>Zastosowanie wzorów Viete'a</b></p>
+            <p style="text-align: center; font-size: 2em;">1. Badanie znaków pierwiastków trójmianu:</p>
+            <p style="text-align: center; font-size: 2em;">a) x<sub>1</sub> * x<sub>2</sub> < 0 (Obydwa pierwiastki różnych znaków)</p>
+            <p style="text-align: center; font-size: 2em;">b) x<sub>1</sub> * x<sub>2</sub> > 0 (Obydwa pierwiastki tych samych znaków)</p>
+            <p style="text-align: center; font-size: 2em;">c) x<sub>1</sub> * x<sub>2</sub> > 0 &#8743; x<sub>1</sub> + x<sub>2</sub> > 0 <=>  (Obydwa pierwiastki dodatnie)</p>
+            <p style="text-align: center; font-size: 2em;">d) x<sub>1</sub> * x<sub>2</sub> > 0 &#8743; x<sub>1</sub> + x<sub>2</sub> < 0 <=>  (Obydwa pierwiastki ujemne)</p>
+            <p style="text-align: center; font-size: 2em;">2. Obliczanie wyrażeń zawierających pierwiastki bez obliczania tych pierwiastków:</p>
+            <p style="text-align: center; font-size: 2em;">a) Suma kwadratów pierwiastków:</p>
+            <p style="text-align: center; font-size: 2em;">x<sub>1</sub><sup>2</sup> + x<sub>2</sub><sup>2</sup> = (x<sub>1</sub> + x<sub>2</sub>)<sup>2</sup> - 2x<sub>1</sub>x<sub>2</sub></p>
+            <p style="text-align: center; font-size: 2em;">b) Suma odwrotoności pierwiastków:</p>
+            <p style="text-align: center; font-size: 2em;">1/x<sub>1</sub> + 1/x<sub>2</sub> = (x<sub>1</sub> + x<sub>2</sub>)/(x<sub>1</sub> * x<sub>2</sub>)</p>
+            <p style="text-align: center; font-size: 2em;">c) Suma odwrotoności kwadratów pierwiastków:</p>
+            <p style="text-align: center; font-size: 2em;">1/x<sub>1</sub><sup>2</sup> + 1/x<sub>2</sub><sup>2</sup> = ((x<sub>1</sub> + x<sub>2</sub>)<sup>2</sup> - 2x<sub>1</sub>x<sub>2</sub>)/(x<sub>1</sub> * x<sub>2</sub>)<sup>2</sup></p>
+            <p style="text-align: center; font-size: 2em;">d) Suma sześcianów pierwiastków:</p>
+            <p style="text-align: center; font-size: 2em;">x<sub>1</sub><sup>3</sup> + x<sub>2</sub><sup>3</sup> = (x<sub>1</sub> + x<sub>2</sub>)((x<sub>1</sub> + x<sub>2</sub>)<sup>2</sup> - 3x<sub>1</sub>x<sub>2</sub>)</p>
+            <p style="text-align: center; font-size: 2em;">e) Suma czwartych potęg pierwiastków:</p>
+            <p style="text-align: center; font-size: 2em;">x<sub>1</sub><sup>4</sup> + x<sub>2</sub><sup>4</sup> = ((x<sub>1</sub>+x<sub>2</sub>)<sup>2</sup> - 2x<sub>1</sub>x<sub>2</sub>)<sup>2</sup> - 2(x<sub>1</sub>x<sub>2</sub>)<sup>2</sup></p>
+            <p style="text-align: center; font-size: 2em;">f) Suma kwadratów pierwiastków pomniejszona o 1:</p>
+            <p style="text-align: center; font-size: 2em;">(x<sub>1</sub> - 1)<sup>2</sup> + (x<sub>2</sub> - 1)<sup>2</sup> = (x<sub>1</sub> + x<sub>2</sub>)<sup>2</sup> - 2x<sub>1</sub>x<sub>2</sub> + 2</p>
+        </main>
+    </body>
+</html>
